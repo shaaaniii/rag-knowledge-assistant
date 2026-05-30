@@ -44,7 +44,9 @@ and generates professional structured answers — citing sources.
 
 ---
 
-🏗️ Architecture
+## 🏗️ Architecture
+
+```
 User Question
 ↓
 FastAPI Backend (/ask)
@@ -60,6 +62,8 @@ Llama 3 via Ollama (local LLM)
 Structured answer + sources returned
 ↓
 React Frontend displays response
+```
+
 
 
 ---
@@ -136,30 +140,34 @@ http://localhost:5173/
 ---
 
 ## 📁 Project Structure
+
+```
 rag-assistant/
 ├── backend/
-│ ├── pipeline/
-│ │ ├── extractor.py
-│ │ ├── chunker.py
-│ │ ├── embedder.py
-│ │ ├── vector_store.py
-│ │ ├── rag_chain.py
-│ │ ├── llm.py
-│ │ ├── prompt.py
-│ │ └── memory.py
-│ ├── routers/
-│ │ ├── upload.py
-│ │ ├── ask.py
-│ │ ├── history.py
-│ │ └── feedback.py
-│ ├── models/
-│ ├── database/
-│ └── main.py
+│   ├── pipeline/
+│   │   ├── extractor.py
+│   │   ├── chunker.py
+│   │   ├── embedder.py
+│   │   ├── vector_store.py
+│   │   ├── rag_chain.py
+│   │   ├── llm.py
+│   │   ├── prompt.py
+│   │   └── memory.py
+│   ├── routers/
+│   │   ├── upload.py
+│   │   ├── ask.py
+│   │   ├── history.py
+│   │   └── feedback.py
+│   ├── models/
+│   ├── database/
+│   └── main.py
 ├── frontend/
-│ └── src/
-│ ├── App.jsx
-│ └── App.css
+│   └── src/
+│       ├── App.jsx
+│       └── App.css
 └── requirements.txt
+```
+
 
 ---
 
