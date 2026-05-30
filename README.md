@@ -45,21 +45,6 @@ and generates professional structured answers — citing sources.
 ---
 
 ## 🏗️ Architecture
-User Question
-↓
-FastAPI Backend (/ask)
-↓
-FAISS Vector Store (semantic search)
-↓
-Top-K relevant chunks retrieved
-↓
-Prompt built with context + question
-↓
-Llama 3 via Ollama (local LLM)
-↓
-Structured answer + sources returned
-↓
-React Frontend displays response
 
 
 ---
@@ -93,7 +78,7 @@ React Frontend displays response
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/rag-knowledge-assistant.git
+git clone https://github.com/shaaaniii/rag-knowledge-assistant.git
 cd rag-knowledge-assistant
 ```
 
@@ -136,30 +121,6 @@ http://localhost:5173/
 ---
 
 ## 📁 Project Structure
-rag-assistant/
-├── backend/
-│ ├── pipeline/
-│ │ ├── extractor.py
-│ │ ├── chunker.py
-│ │ ├── embedder.py
-│ │ ├── vector_store.py
-│ │ ├── rag_chain.py
-│ │ ├── llm.py
-│ │ ├── prompt.py
-│ │ └── memory.py
-│ ├── routers/
-│ │ ├── upload.py
-│ │ ├── ask.py
-│ │ ├── history.py
-│ │ └── feedback.py
-│ ├── models/
-│ ├── database/
-│ └── main.py
-├── frontend/
-│ └── src/
-│ ├── App.jsx
-│ └── App.css
-└── requirements.txt
 
 ---
 
